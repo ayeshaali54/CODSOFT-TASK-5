@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Bookman Old Style', serif;;
+}
+
+header {
+  background: linear-gradient(rgb(152, 110, 156), rgb(67, 54, 64));
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  flex: 1;
+}
+
+.header-right {
+  flex: 1;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 0px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #ccc;
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.image-container {
+  flex: 1;
+  text-align: right;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+nav ul li a {
+    color: #fff; 
+    text-decoration: none; 
+}
+nav ul li a:hover,
+nav ul li a:active,
+nav ul li a:focus {
+    color: #fff; /
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+main {
+    padding: 20px;
+    button {
+      border: none;
+      display: flex;
+      padding: 0.75rem 1.5rem;
+      background: linear-gradient(to bottom, rgb(150, 111, 150), rgb(155, 82, 162));
+      color: #ffffff;
+      font-size: 0.75rem;
+      line-height: 1rem;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      vertical-align: middle;
+      align-items: center;
+      border-radius: 0.5rem;
+      user-select: none;
+      gap: 0.75rem;
+      box-shadow: 0 4px 6px -1px #488aec31, 0 2px 4px -1px #488aec17;
+      transition: all .6s ease;
+    }
+    
+    button:hover {
+      box-shadow: 0 10px 15px -3px #488aec4f, 0 4px 6px -2px #488aec17;
+    }
+    
+    button:focus,button:active {
+      opacity: .85;
+      box-shadow: none;
+    }
+    
+    button svg {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+    #welcome {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .content {
+      flex: 1;
+  }
+  
+  .image-container {
+      flex-shrink: 0; 
+      margin-left: 20px;
+  }    
+
+
+    
+}
+
+footer {
+  background: linear-gradient(rgb(152, 110, 156), rgb(67, 54, 64));
+    color: #fff;
+    text-align: center;
+    padding: 9px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Homepage Styles */
+#welcome {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);     
+      
+}
+
+/* Job Listings Styles */
+.job-listing {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    .bookmarkBtn {
+      width: 100px;
+      height: 40px;
+      border-radius: 40px;
+      border: 1px solid rgba(255, 255, 255, 0.349);
+      background-color: rgb(12, 12, 12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition-duration: 0.3s;
+      overflow: hidden;
+    }
+    
+    .IconContainer {
+      width: 30px;
+      height: 30px;
+      background: linear-gradient(to bottom, rgb(255, 136, 255), rgb(172, 70, 255));
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      z-index: 2;
+      transition-duration: 0.3s;
+    }
+    
+    .icon {
+      border-radius: 1px;
+    }
+    
+    .text {
+      height: 100%;
+      width: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      z-index: 1;
+      transition-duration: 0.3s;
+      font-size: 1.04em;
+    }
+    
+    .bookmarkBtn:hover .IconContainer {
+      width: 90px;
+      transition-duration: 0.3s;
+    }
+    
+    .bookmarkBtn:hover .text {
+      transform: translate(10px);
+      width: 0;
+      font-size: 0;
+      transition-duration: 0.3s;
+    }
+    
+    .bookmarkBtn:active {
+      transform: scale(0.95);
+      transition-duration: 0.3s;
+    }
+    
+      
+}
+
+/* Job Detail Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f6f6f6;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ccc;
+}
+
+main {
+  padding: 20px;
+}
+
+.job-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.job-info {
+  flex: 1;
+}
+
+.job-info h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.job-info p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.job-description {
+  flex: 2;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.job-description h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #333;
+}
+
+.job-description ul {
+  margin-left: 20px;
+}
+
+.job-description ul li {
+  color: #666;
+  margin-bottom: 5px;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+}
+    
+/* Dashboard Styles */
+.dashboard {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
